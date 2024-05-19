@@ -65,35 +65,46 @@ header #top-container{
     padding-top: 20px;
 
 
+
     #search-bar{
         display: flex;
         width: 584px;
         height: 48px;
+        /*width: auto;*/
         /*background-color: blue;*/
         align-content: center;
         border: 1px solid #dcdbdb;
         border-radius: 50px;
+
+
+        &:hover{
+            box-shadow: lightgray 0px 1px 6px;
+            cursor: pointer;
+        }
+
+        input{
+            width: 443px;
+            height: 44px;
+            border: none;
+            outline: none;
+            margin: 0;
+            padding: 0;
+            background-clip: content-box;
+        }
+
+        .icon-container{
+            padding: 10px;
+        }
+
+        .search-icon{
+            height: 20px;
+            width: 20px;
+        }
     }
 
-    input{
-        width: 443px;
-        height: 44px;
-        border: none;
-        outline: none;
-        margin: 0;
-        padding: 0;
-        background-clip: content-box;
-    }
 
-    .icon-container{
-        padding: 10px;
-    }
 }
 
-.search-icon{
-    height: 20px;
-    width: 20px;
-}
 
 #button-container{
     display: flex;
@@ -115,7 +126,8 @@ header #top-container{
         border-radius: 5px;
 
         &:hover{
-            box-shadow: #dedede;
+            box-shadow: lightgray 0px 0px 2px 1px;
+            cursor: pointer;
         }
     }
 }
@@ -136,16 +148,15 @@ header #top-container{
 
 footer{
     display: flex;
-    background-color: red;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     margin-bottom: 0;
-    height: 94px;
+    height: auto;
     width: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 
 
     hr{

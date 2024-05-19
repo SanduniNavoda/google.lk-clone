@@ -1,5 +1,27 @@
-@media all and (max-width: 1200px) {
-    #lower{
-        justify-content: space-around;
+@media screen and (width <= 1200px) {
+
+    footer{
+        #lower{
+            justify-content: space-evenly;
+        }
+
+    }
+}
+
+@media screen and (width <= 456px) {
+
+    footer {
+         #lower {
+             flex-wrap: wrap;
+             justify-items: center;
+        }
+    }
+
+}
+
+@media all and (width <= 500px) {
+
+    #search-bar {
+        transform: scaleX(80%);
     }
 }
